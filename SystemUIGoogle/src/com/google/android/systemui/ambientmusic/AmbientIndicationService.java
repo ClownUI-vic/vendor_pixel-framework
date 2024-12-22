@@ -105,7 +105,7 @@ public final class AmbientIndicationService extends BroadcastReceiver {
     }
 
     int getCurrentUser() {
-        return KeyguardUpdateMonitor.getCurrentUser();
+        return mSelectedUserInteractor.getSelectedUserId();
     }
 
     void onUserSwitched() {
